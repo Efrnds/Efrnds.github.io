@@ -87,6 +87,15 @@ Classes & ID's
     height: 128px;
 }
 
+.principal::before {
+    content: "";
+    width: 79vw;
+    height: 5px;
+    background-color: #1D1839;
+    position: absolute;
+    border-radius: 4px;
+}
+
 .principal {
     background-color: #0E0C1B;
     margin: 0px 50px;
@@ -95,6 +104,14 @@ Classes & ID's
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     place-content: center;
+}
+
+.botao-header {
+    background-color: #E5E5E5;
+    color: #323232;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 1.4rem;
 }
 
 .botao-visitar {
