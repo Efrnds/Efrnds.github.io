@@ -7,41 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEU SITE</title>
     <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
+    <nav class="navbar m-5">
+        <div class="p-2 m-3">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="imagens/logo.svg" alt="" />
+            </a>
+        </div>
+        <div class="ms-auto p-3">
+            <a href="mailto:eduardo.fernandes.silva13@gmail.com" class="botao-nav">Contact-me</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                    <div class="col">
+                        <div class="proj">
+                            <img src="imagens/IMC.svg" alt="" class="image" />
+                            <div class="middle">
+                                <a class="botao-visitar" href="portfolio/calc_imc/calc.html">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
 
-    <header class="header" id="navbar">
-        <a href="index.html"><img class="logo" src="imagens/logo.svg" alt="" /></a>
-        <a href="mailto:eduardo.fernandes.silva13@gmail.com" class="botao-header">Contact-me</a>
-    </header>
-    <div class="principal">
-        <div class="container">
-            <img src="imagens/IMC.svg" alt="" class="image" />
-            <div class="middle">
-                <a class="botao-visitar" href="portfolio/calc_imc/calc.html">Visitar</a>
+                    <div class="col">
+                        <div class="proj">
+                            <img src="imagens/bikraft.svg" alt="" class="image" />
+                            <div class="middle">
+                                <a class="botao-visitar" href="portfolio/bikcraft/index.html ">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="proj">
+                            <img src="imagens/camera.tools.svg" alt="" class="image" />
+                            <div class="middle">
+                                <a class="botao-visitar" href="portfolio/camera.tools/index.html ">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
-        <div class="container">
-            <img src="imagens/bikraft.svg" alt="" class="image" />
-            <div class="middle ">
-                <a class="botao-visitar " href="portfolio/bikcraft/index.html ">Visitar</a>
-            </div>
-        </div>
-        <div class="container">
-            <img src="imagens/camera.tools.svg" alt="" class="image" />
-            <div class="middle ">
-                <a class="botao-visitar " href="portfolio/camera.tools/index.html ">Visitar</a>
-            </div>
-        </div>
-    </div>
-    <div class="contato ">
+    </main>
+    <div class="contato">
         <h2>Entre em contato:</h2>
         <div class="email ">
-            <a href="mailto:eduardo.fernandes.silva13@gmail.com ">eduardo.fernandes.silva13@gmail.com</a
->
+            <a href="mailto:eduardo.fernandes.silva13@gmail.com ">eduardo.fernandes.silva13@gmail.com</a>
         </div>
         <div class="telefone ">
             <a href="tel:+55(44)99807-4897 ">(44)99807-4897</a>
