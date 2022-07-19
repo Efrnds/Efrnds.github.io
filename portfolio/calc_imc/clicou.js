@@ -5,17 +5,9 @@ var py;
 var vel;
 var obj;
 var tmp;
-const chorro = {
-    "Nome": "Ronaldo",
-    "Idade": 4,
-    "Amigos": ["Robson", "Jose"]
-};
 
 var movendo = document.getElementById("movendo");
 
-/*alert(chorro["Nome"]);
-alert(chorro["Idade"]);
-alert(chorro["Amigos"]);*/
 
 function iniciar() {
     dx = 0;
@@ -81,3 +73,7 @@ function enterFrame() {
     obj.style.top = py + "px";
 }
 window.addEventListener("load", iniciar)
+
+function contador(){
+    if ()
+}
