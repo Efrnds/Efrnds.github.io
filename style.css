@@ -30,6 +30,7 @@ Css's
 */
 body {
     background-color: var(--azul-escuro);
+    scroll-behavior: smooth;
 }
 
 p, a {
@@ -42,12 +43,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24pt;
 }
 
+footer {
+    display: grid;
+    place-items: center;
+    color: #E5E5E5;
+}
+
 /*
 Classes & ID's
 */
 .nav {
     position: relative;
-
 }
 
 .botao-nav {
@@ -84,18 +90,20 @@ main::before {
     transition-duration: .3s;
 }
 
-.proj:hover .middle{
+.proj:hover .middle {
     opacity: 1;
 }
-.proj:hover .image{
+
+.proj:hover .image {
     opacity: 0.3;
 }
 
-.image{
+.image {
     transition: ease-in-out;
     transition-duration: .3s;
 }
-.middle{
+
+.middle {
     position: absolute;
     place-self: center;
     opacity: 0;
@@ -103,7 +111,7 @@ main::before {
     transition-duration: .3s;
 }
 
-.middle a{
+.middle a {
     text-decoration: none;
     background-color: #ffbb00;
     color: #5f4601;
@@ -113,4 +121,43 @@ main::before {
 
 .col {
     margin: 13.5px 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.contato{
+    display: grid;
+    place-items: center;
+    color: #E5E5E5;
+}
+
+.contato a{
+    color: #ffbb00;
+    text-decoration: none;
+}
+
+footer::before{
+    content: "";
+    width: 90%;
+    height: 4px;
+    background-color: var(--azul-borda);
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 2fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
