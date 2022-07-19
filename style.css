@@ -62,6 +62,8 @@ Classes & ID's
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 1em;
+    transition: ease-in-out;
+    transition-duration: .2s;
 }
 
 .botao-nav:hover {
@@ -108,7 +110,7 @@ main::before {
     place-self: center;
     opacity: 0;
     transition: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: .2s;
 }
 
 .middle a {
@@ -117,6 +119,13 @@ main::before {
     color: #5f4601;
     padding: 0px 10px;
     border-radius: 15px;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+
+.middle a:hover {
+    color: #291e00;
+    background-color: #b18200;
 }
 
 .col {
@@ -129,18 +138,24 @@ main::before {
     place-items: center;
 }
 
-.contato{
+.contato {
     display: grid;
     place-items: center;
     color: #E5E5E5;
 }
 
-.contato a{
+.contato a {
     color: #ffbb00;
     text-decoration: none;
+    transition: ease-in;
+    transition-duration: .2s;
 }
 
-footer::before{
+.contato a:hover{
+    color: #ffea2d;
+}
+
+footer::before {
     content: "";
     width: 90%;
     height: 4px;
