@@ -1,95 +1,135 @@
-        body {
-            font-family: arial;
-            font-size: 12px;
-            display: grid;
-            margin: 0px;
-            padding: 0px;
-            background-color: #000;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        #altura,
-        #peso,
-        p,
-        #result,
-        #media,
-        input {
-            display: grid;
-            width: 50%;
-            margin: auto;
-            text-align: start;
-            padding: 10px;
-        }
-        
-        a {
-            place-content: center;
-            display: grid;
-            text-decoration: none;
-            margin: 20px;
-            color: wheat;
-        }
-        
-        a:hover {
-            color: #fff;
-        }
-        
-        #altura,
-        #peso {
-            border: none;
-            border-bottom: 1px solid #000;
-            margin: 10px auto;
-            width: 40%;
-        }
-        
-        #enviar {
-            text-align: center;
-            width: 20%
-        }
-        
-        p {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        #div-result {
-            background: unset;
-            width: 40%;
-            place-self: center;
-            margin: 20px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        
-        #div-result p {
-            text-align: center;
-        }
-        
-        .content {
-            background-color: rgb(29, 29, 29);
-            color: wheat;
-            border-radius: 4px;
-            place-self: center;
-            width: 80%;
-            height: auto;
-            display: grid;
-            margin-top: 10%;
-        }
-        
-        .click {
-            color: rgb(29, 29, 29);
-            width: 200px;
-            place-self: center;
-            padding: 2px;
-            border-radius: 5px;
-        }
-        
-        .click:hover {
-            color: rgb(255, 0, 0);
-            text-shadow: rgb(88, 0, 0) 1px 1px;
-            background-color: #aaa;
-            transition: ease-in;
-            transition-duration: 0.3s;
-        }
+@font-face {
+    font-family: Dongle-Regular;
+    src: url(/fonts/IBMPlexMono-Regular.ttf);
+}
+
+body {
+    font-family: Dongle-Regular;
+    font-size: 14pt;
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0C1B;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#result,
+#media {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    text-align: start;
+    padding: 10px;
+}
+
+a {
+    place-content: center;
+    display: grid;
+    text-decoration: none;
+    margin: 20px;
+    color: rgb(61, 61, 61);
+    background-color: rgb(204, 204, 204);
+    width: fit-content;
+    place-self: center;
+    transition: linear;
+    transition-duration: .2s;
+    border-radius: 4px;
+    padding: 5px;
+    border: #0E0C1B 2px solid;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    border: 2px #ffffff solid;
+}
+
+#altura,
+#peso {
+    border: none;
+    border-bottom: 4px solid #1D1839;
+}
+
+#enviar {
+    border: #1D1839 4px solid;
+    background-color: #1D1839;
+    text-align: center;
+    display: block;
+    place-self: center;
+    margin: 20px auto;
+    width: 20%;
+    border-radius: .4rem;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-duration: .1s;
+}
+#enviar:hover{
+    border: #1e1666 4px solid;
+}
+
+#div-result {
+    background: unset;
+    width: 40%;
+    place-self: center;
+    margin: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#div-result p {
+    text-align: center;
+}
+
+.content {
+    background-color: #0E0C1B;
+    color: white;
+    border: #1D1839 4px solid;
+    border-radius: 1.5rem;
+    place-self: center;
+    width: 80%;
+    height: auto;
+    display: grid;
+    margin-top: 10%;
+}
+
+.click {
+    color: #0E0C1B;
+    width: 200px;
+    place-self: center;
+    padding: 2px;
+    border-radius: 5px;
+    background:none;
+    border: 2px solid #0E0C1B;
+}
+
+.click:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(88, 0, 0) 1px 1px;
+    background-color: #aaa;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin: auto 8rem;
+}
+
+input {
+    display: grid;
+    margin: 20px ;
+    background-color: #0E0C1B;
+    color: white;
+    transition: ease-in;
+    transition-duration: .3s;
+    font-family: Dongle-Regular;
+}
+
+p{
+    display: grid;
+    margin: 20px;
+}
+

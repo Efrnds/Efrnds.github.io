@@ -14,13 +14,17 @@
 <body>
     <div class="content">
         <a href="clicou.html" class="click">NÃO CLIQUE AQUI!</a>
-        <h1>=====Calculadora de IMC=====
+        <h1>Calculadora de IMC
         </h1>
         <form id="formulario" method="dialog">
-            <p>Insira a altura: </p>
-            <input type="number" value="Altura" step="0.01" min="0" id="altura">
-            <p>Insira o peso: </p>
-            <input type="number" value="Peso" step="0.01" min="0" id="peso">
+            <div class="input">
+                <p>Insira a altura: </p>
+                <input type="number" value="Altura" step="0.01" min="0" id="altura">
+            </div>
+            <div class="input">
+                <p>Insira o peso: </p>
+                <input type="number" value="Peso" step="0.01" min="0" id="peso">
+            </div>
             <input type="submit" onclick="funcao1()" value="Enviar" id="enviar">
         </form>
         <div id="div-result">

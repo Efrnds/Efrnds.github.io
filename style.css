@@ -94,10 +94,14 @@ main::before {
 
 .proj:hover .middle {
     opacity: 1;
-}
 
+}
+.proj:hover{
+    border: #180875 4px solid;
+}
 .proj:hover .image {
     opacity: 0.3;
+    
 }
 
 .image {
@@ -151,7 +155,7 @@ main::before {
     transition-duration: .2s;
 }
 
-.contato a:hover{
+.contato a:hover {
     color: #ffea2d;
 }
 

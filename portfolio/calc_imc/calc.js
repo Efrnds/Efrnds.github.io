@@ -3,7 +3,7 @@ function funcao1() {
   var altura = document.getElementById("altura");
   var imc = peso.value / (altura.value * altura.value);
 
-  document.getElementById("result").innerHTML = "Seu imc é de: " + imc;
+  document.getElementById("result").innerHTML = "Seu imc é de: " + imc.toFixed(2);
 
   if (imc < 16) {
     document.getElementById("media").innerHTML = "Baixo peso severo.";
