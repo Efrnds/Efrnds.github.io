@@ -29,8 +29,10 @@ Utilitários
 Css's
 */
 body {
+    display: grid;
     background-color: var(--azul-escuro);
     scroll-behavior: smooth;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
 }
 
 p, a {
@@ -48,6 +50,7 @@ footer {
     place-items: center;
     color: #E5E5E5;
 }
+
 
 /*
 Classes & ID's
