@@ -53,5 +53,6 @@ function funcao1() {
   } else {
     document.getElementById("div-result").style.backgroundImage = "url(/imagens/missing.jpg)";
     document.getElementById("div-result").style.color = "#ff99ff";
+    document.getElementById("media").innerHTML = "";
   }
 }
