@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Dongle-Regular;
+    src: url("../../fonts/IBMPlexMono-Regular.ttf");
+}
+
+/* 
+    UTILITÁRIOS
+*/
+
+body {
+    font-family: Dongle-Regular, sans-serif;
+    font-size: 14pt;
+    display: grid;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0C1B;
+}
+
+p {
+    margin: 20px;
+}
+
+input {
+    display: grid;
+    margin: 20px;
+    background-color: #0E0C1B;
+    color: white;
+    transition: ease-in;
+    transition-duration: .3s;
+    font-family: Dongle-Regular, sans-serif;
+    border: none;
+    border-bottom: #1D1839 4px solid;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    display: flex;
+    justify-self: center;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    background-color: rgb(204, 204, 204);
+    width: fit-content;
+    transition: linear;
+    transition-duration: .2s;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: #0E0C1B 2px solid;
+    margin: 1rem;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    border: 2px #ffffff solid;
+}
+
+
+#enviar {
+    border: #1D1839 4px solid;
+    background-color: #1D1839;
+    text-align: center;
+    display: block;
+    place-self: center;
+    margin: 20px auto;
+    border-radius: .4rem;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-duration: .1s;
+}
+
+#enviar:hover {
+    border: #1e1666 4px solid;
+}
+
+#div-result {
+    background: unset;
+    width: 40%;
+    display: grid;
+    place-self: center;
+    place-content: center;
+    place-items: center;
+    margin: 20px auto;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: ease-in;
+    transition-duration: .2s;
+}
+
+#div-result p {
+    text-align: center;
+}
+
+.content {
+    background-color: #0E0C1B;
+    color: white;
+    border: #1D1839 4px solid;
+    border-radius: 1.5rem;
+    margin-top: 10%;
+}
+
+.click {
+    color: #0E0C1B;
+    width: 200px;
+    place-self: center;
+    padding: 2px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #0E0C1B;
+}
+
+.click:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(88, 0, 0) 1px 1px;
+    background-color: #aaa;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+.input {
+    margin: auto 8rem;
+    display: grid;
+}
+.input p{
+    grid-row: 1;
+}
+
+
+.input input{
+    grid-row: 1;
+    justify-self: end;
+    text-align: center;
+}
+
+#formulario{
+    display: grid;
+}
