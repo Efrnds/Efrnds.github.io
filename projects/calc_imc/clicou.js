@@ -73,4 +73,12 @@ function enterFrame() {
     obj.style.top = py + "px";
 }
 window.addEventListener("load", iniciar)
+contadorMoeda = addEventListener.collisionDetection(moeda++);
 
+
+
+function collisionDetection(){
+    for (let c = 0; c < contadorMoeda; c++){
+            const b = moeda[c];
+        }
+}

@@ -62,7 +62,7 @@ main{
       object-fit: cover;
 }
 
-.moeda {
+#moeda {
     width: 1rem;
     height: 1rem;
     border-radius: 1rem;
