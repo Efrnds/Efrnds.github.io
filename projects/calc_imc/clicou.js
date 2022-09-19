@@ -74,6 +74,3 @@ function enterFrame() {
 }
 window.addEventListener("load", iniciar)
 
-function contador(){
-    if ()
-}
