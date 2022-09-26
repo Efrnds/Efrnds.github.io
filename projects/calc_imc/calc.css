@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Dongle-Regular;
+    font-family: IBMPlexMono;
     src: url("../../fonts/IBMPlexMono-Regular.ttf");
 }
 
@@ -8,7 +8,7 @@
 */
 
 body {
-    font-family: Dongle-Regular, sans-serif;
+    font-family: IBMPlexMono, sans-serif;
     font-size: 14pt;
     display: grid;
     justify-content: center;
@@ -28,7 +28,7 @@ input {
     color: white;
     transition: ease-in;
     transition-duration: .3s;
-    font-family: Dongle-Regular, sans-serif;
+    font-family: IBMPlexMono, sans-serif;
     border: none;
     border-bottom: #1D1839 4px solid;
 }

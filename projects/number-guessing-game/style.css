@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Dongle-Regular;
+    src: url(/fonts/Dongle-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dongle-Bold;
+    src: url(/fonts/Dongle-Bold.ttf);
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Dongle-Regular, sans-serif;
+    font-size: 18pt;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 12% auto;
+    background-color: #0E0C1B;
+    color: #fff;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    transition: ease-in-out;
+    transition-duration: .2s;
+    border: #1D1839 2px solid;
+    background-color: #1D1839;
+    padding:0px 5px;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: rgb(170, 170, 170);
+    background-color: #0E0C1B;
+    border: #1D1839 2px solid;
+}
+h1 {
+    font-family: Dongle-Bold;
+}
+
+main {
+    border: #1D1839 4px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form input[type="number"] {
+    width: 200px;
+    color: white;
+    background-color: #0E0C1B;
+    border: none;
+    border-bottom: #1D1839 3px solid;
+}
+
+.lastResult {
+    color: white;
+    padding: 3px;
+}

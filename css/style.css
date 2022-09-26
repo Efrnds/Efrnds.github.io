@@ -80,24 +80,6 @@ main::before {
     margin: 0px auto;
 }
 
-.proj:nth-child(2){
-    border: var(--azul-borda) 4px solid;
-    border-radius: 1em;
-    width: 400px;
-    height: 400px;
-    display: grid;
-    margin: auto;
-    place-self: center;
-    align-content: center;
-    padding: 20px;
-}
-
-.proj:nth-child(2) button{
-    background-color: white;
-    color: #000000;
-    display: block;
-    margin: auto;
-}
 
 .proj {
     border: var(--azul-borda) 4px solid;
@@ -105,9 +87,10 @@ main::before {
     width: 256px;
     height: 256px;
     display: grid;
-    position: relative;
-    transition: ease-in-out;
-    transition-duration: .3s;
+    margin: auto;
+    place-self: center;
+    place-content: center;
+    padding: 20px;
 }
 
 
