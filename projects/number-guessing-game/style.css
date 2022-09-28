@@ -21,6 +21,9 @@ body {
     margin: 12% auto;
     background-color: #0E0C1B;
     color: #fff;
+    border: #1D1839 4px solid;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 a{
@@ -47,11 +50,7 @@ h1 {
     font-family: Dongle-Bold;
 }
 
-main {
-    border: #1D1839 4px solid;
-    border-radius: 20px;
-    padding: 20px;
-}
+
 
 .form input[type="number"] {
     width: 200px;
@@ -64,4 +63,14 @@ main {
 .lastResult {
     color: white;
     padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.guessSubmit{
+    background-color: #fff;
+    border: rgb(142, 142, 142) 3px solid;
+    font-family: Dongle-Regular;
+    font-size: 15pt;
+    border-radius: 5px;
 }
