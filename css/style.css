@@ -19,10 +19,32 @@ Utilitários
     src: url(../fonts/Dongle-Bold.ttf);
 }
 
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 /*
 Css's
 */
+
+
 body {
     display: grid;
     background-color: var(--azul-escuro);
@@ -45,12 +67,27 @@ footer {
     display: grid;
     place-items: center;
     color: #E5E5E5;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    background: var(--azul-escuro);
+    padding: 40px;
 }
 
+main {
+    animation: 1s ease-out 0s 1 slideInRight;
+    background: var(--azul-escuro);
+    padding: 40px;
+}
+
+nav {
+    animation: 1s ease-out 0s 1 slideInLeft;
+    background: var(--azul-escuro);
+    padding: 40px;
+}
 
 /*
 Classes & ID's
 */
+
 .nav {
     position: relative;
 }
@@ -98,12 +135,14 @@ main::before {
     opacity: 1;
 
 }
-.proj:hover{
+
+.proj:hover {
     border: #180875 4px solid;
 }
+
 .proj:hover .image {
     opacity: 0.3;
-    
+
 }
 
 .image {
@@ -148,6 +187,9 @@ main::before {
     display: grid;
     place-items: center;
     color: #E5E5E5;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    background: var(--azul-escuro);
+    padding: 40px;
 }
 
 .contato a {
