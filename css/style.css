@@ -31,11 +31,11 @@ Utilitários
 
 @keyframes slideInLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
 
@@ -50,6 +50,7 @@ body {
     background-color: var(--azul-escuro);
     scroll-behavior: smooth;
     grid-template-rows: 0.5fr 2fr 0.5fr;
+    position: relative;
 }
 
 p, a {
@@ -63,25 +64,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-footer {
-    display: grid;
-    place-items: center;
-    color: #E5E5E5;
-    animation: 1s ease-out 0s 1 slideInLeft;
-    background: var(--azul-escuro);
-    padding: 40px;
+footer{
+    color:  white;
+    text-align: center;
 }
 
-main {
-    animation: 1s ease-out 0s 1 slideInRight;
-    background: var(--azul-escuro);
-    padding: 40px;
-}
-
-nav {
-    animation: 1s ease-out 0s 1 slideInLeft;
-    background: var(--azul-escuro);
-    padding: 40px;
+#anim {
+    animation: .9s ease-out 0s 1 slideInLeft;
+    background: black;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /*
@@ -107,6 +101,11 @@ Classes & ID's
     background-color: #aaaaaa;
 }
 
+#principal {
+    transition: ease-in;
+    transition-duration: .1s;
+    opacity: 0;
+}
 main::before {
     content: "";
     width: 90%;
@@ -187,9 +186,6 @@ main::before {
     display: grid;
     place-items: center;
     color: #E5E5E5;
-    animation: 1s ease-out 0s 1 slideInLeft;
-    background: var(--azul-escuro);
-    padding: 40px;
 }
 
 .contato a {
