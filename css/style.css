@@ -70,7 +70,7 @@ footer{
 }
 
 #anim {
-    animation: .9s ease-out 0s 1 slideInLeft;
+    animation: .5s ease-out 0s 1 slideInLeft;
     background: black;
     position: absolute;
     display: block;
