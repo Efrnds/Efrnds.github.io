@@ -51,6 +51,7 @@ body {
     scroll-behavior: smooth;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     position: relative;
+    max-height: 200px;
 }
 
 p, a {
@@ -210,13 +211,49 @@ footer::before {
 }
 
 @media (max-width: 1000px) {
+    body {
+        grid-template-rows: 1fr 1fr 1fr;
+        max-height: 200px;
+    }
+
+    footer {
+        max-height: 200px;
+    }
+    
     .container {
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }
 
 @media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 428px) {
+    body {
+        grid-template-rows: 1fr 1fr 1fr;
+        max-height: 200px;
+    }
+    .navbar{
+        display: flex;
+        gap: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .navbar a{
+        gap: 0px;
+        margin: 0px;
+        width: 5rem;
+        font-size: 14pt;
     }
 }

@@ -1,7 +1,7 @@
 var 
-delay=1200; 
+delay=1000; 
 var
-delay2=100;
+delay2=0;
 setTimeout(function removebg (){
     document.getElementById("anim").style.display = "none";
     setTimeout(function backNav(){
