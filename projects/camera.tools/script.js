@@ -12,8 +12,8 @@ function fun1() {
 };
 
 function load() {
-    document.getElementById("demo1").innerHTML = "OFF";
-    document.getElementById("demo2").innerHTML = "OFF";
+    document.getElementById("demo1").innerHTML = "ON";
+    document.getElementById("demo2").innerHTML = "ON";
 };
 
 function fun2() {

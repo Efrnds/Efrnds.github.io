@@ -24,16 +24,17 @@ UTILITÁRIOS
 
 body {
     transition: background  .3s;
-    background-color: black;
-    /* background-image: url('img/Ellipse.svg'); */
+    background: rgba(0, 0, 0, 0.835);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    margin: 60px 65px;
+    margin: 0;
     padding: 0;
     font-family: IBMPlexMono-Regular;
-    width: calc(100% - 120px);
-    height: calc(100% - 130px);
+    width: (100% - 120px);
+    height: fit-content;
 }
 
 p,
@@ -44,22 +45,35 @@ a {
 
 main {
     display: grid;
-    grid-column: 1/-1;
-    padding: 100px 0px;
+    padding: 14.3vh 6vw;
     justify-content: left;
     align-content: center;
-    height: calc(40vh - 100px);
+    width: 20vw;
+    height: 40vh;
+    /* background: rgba(0, 0, 0, 0.76);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 button{
     background: none;
     color: white;
-    font-family: HealTheWebA-Regular;
+    font-family: IBMPlexMono-Regular;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: .2rem .5rem;
     text-align: start;
     font-size: 12pt;
+    transition: ease;
+    transition-duration: .2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
 }
 
 main a {
@@ -70,6 +84,7 @@ footer {
     display: grid;
     align-items: center;
     justify-content: flex-start;
+    padding: 2px 65px;
 }
 
 footer img {
@@ -100,6 +115,7 @@ CLASSES & IDS
     grid-column: 1/-1;
     display: flex;
     flex-wrap: wrap;
+    padding: 60px 65px;
     justify-content: flex-start;
     align-items: baseline;
     flex-direction: row;
