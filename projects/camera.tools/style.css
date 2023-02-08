@@ -23,6 +23,7 @@ UTILITÁRIOS
 */
 
 body {
+    transition: background  .3s;
     background-color: black;
     /* background-image: url('img/Ellipse.svg'); */
     background-repeat: no-repeat;

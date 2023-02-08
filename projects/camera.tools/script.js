@@ -28,19 +28,19 @@ function fun2() {
     });
 
     btn2.addEventListener('click', () =>{
-        document.body.style.backgroundImage = "url('img/Forza.png')";
+        document.body.style.backgroundImage = "url('img/Forza.jpg')";
     });
 
     btn3.addEventListener('click', () =>{
-        document.body.style.backgroundImage = "url('img/Sayonara.png')";
+        document.body.style.backgroundImage = "url('img/Sayonara.jpg')";
     });
 
     btn4.addEventListener('click', () =>{
-        document.body.style.backgroundImage = "url('img/Control.png')";
+        document.body.style.backgroundImage = "url('img/Sekiro.jpg')";
     });
 
     btn5.addEventListener('click', () =>{
-        document.body.style.backgroundImage = "url('img/Control.png')";
+        document.body.style.backgroundImage = "url('img/Sky.jpg')";
     });
 };
 
