@@ -1,13 +1,31 @@
 function fun1() {
-    if (document.getElementById("onoff1").checked == true) {
-        document.getElementById("demo1").innerHTML = "ON";
-    } else {
+    let menu = document.getElementById("onoff1");
+    let random = document.getElementById("onoff2");
+    
+    menu.addEventListener('change', () =>{
+        if (menu.checked == true){
+            document.getElementById("principal").style.backgroundColor = "rgba(0, 0, 0, 0)";
+            document.getElementById("p-menu").style.color = "#000";
+            document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
+        }else {
+            document.getElementById("principal").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+            document.getElementById("p-menu").style.color = "#fff";
+            document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
+        }
+    });
+    
+    
+    if (menu.checked == true) {
         document.getElementById("demo1").innerHTML = "OFF";
-    }
-    if (document.getElementById("onoff2").checked == true) {
-        document.getElementById("demo2").innerHTML = "ON ";
+       
     } else {
+        document.getElementById("demo1").innerHTML = "ON";
+        // document.getElementsById("principal").style.background = "rgba(0, 0, 0, 0.75)";
+    }
+    if ( random == true) {
         document.getElementById("demo2").innerHTML = "OFF";
+    } else {
+        document.getElementById("demo2").innerHTML = "ON";
     }
 };
 

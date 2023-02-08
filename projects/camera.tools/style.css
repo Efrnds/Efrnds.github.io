@@ -107,7 +107,9 @@ footer #div-footer {
 CLASSES & IDS
 
 */
-
+#p-menu, #p-random {
+    font-family: IBMPlexMono-Bold;
+}
 .header {
     grid-column: 1/-1;
     display: flex;
@@ -195,6 +197,13 @@ CLASSES & IDS
     transition-duration: .3s;
 }
 
-.principal {
+#principal {
     background: rgba(0, 0, 0, 0.75);
+    transition: ease;
+    transition-duration: .2s;
+}
+
+.demo1, .demo2{
+    transition: ease;
+    transition-duration: .2s;
 }
