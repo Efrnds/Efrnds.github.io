@@ -1,0 +1,124 @@
+body {
+    display: grid;
+    font-family: sans-serif;
+    background: #a7a7a7;
+}
+
+p {
+    text-align: center;
+}
+
+:root {
+    --azul-escuro: #0E0C1B;
+    --azul-borda: #1D1839;
+    --cor-link: #ffbb00;
+    --cor-texto: #fff;
+}
+
+@font-face {
+    font-family: Dongle-Regular;
+    src: url("/fonts/Dongle-Regular.ttf");
+}
+
+@font-face {
+    font-family: Dongle-Bold;
+    src: url("/fonts/Dongle-Bold.ttf");
+}
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-color: var(--azul-escuro);
+    scroll-behavior: smooth;
+    position: relative;
+    height: fit-content;
+}
+p, a {
+    font-family: Dongle-Regular, sans-serif;
+    font-size: 18pt;
+}
+
+main {
+    background-color: var(--azul-escuro);
+}
+
+main::before {
+    content: "";
+    width: 90%;
+    height: .3rem;
+    background-color: var(--azul-borda);
+    border-radius: .3rem;
+    display: block;
+    margin: 0px auto;
+}
+.header {
+    background: var(--azul-escuro);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu a {
+    color: wheat;
+}
+
+.menu {
+    display: flex;
+}
+
+.a-menu:hover {
+    background: #969696;
+    color: #272727;
+    transition: ease-in;
+    transition-duration: 0.1s;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: rgba(87, 87, 87, 0.11);
+}
+
+.botao-nav {
+    background-color: #E5E5E5;
+    color: #323232;
+    text-decoration: none;
+    padding: .5rem .8rem;
+    border-radius: 1em;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+
+.botao-nav:hover {
+    color: #000000;
+    background-color: #aaaaaa;
+}
+
+
+/* 
+    SCROLLBAR
+*/
+
+::-webkit-scrollbar-thumb {
+    background-color: #e6e6e6cb;
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar { 
+    content: "";
+    width: .4rem;
+    height: .4rem;
+}
+
+
+

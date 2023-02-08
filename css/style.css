@@ -19,33 +19,14 @@ Utilitários
     src: url(../fonts/Dongle-Bold.ttf);
 }
 
-@keyframes slideInRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
 /*
 Css's
 */
 
 
 body {
+    margin: 0;
+    padding: 0;
     display: grid;
     background-color: var(--azul-escuro);
     scroll-behavior: smooth;
