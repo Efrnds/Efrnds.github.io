@@ -24,9 +24,6 @@ UTILITÁRIOS
 
 body {
     transition: background  .3s;
-    background: rgba(0, 0, 0, 0.835);
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -196,4 +193,8 @@ CLASSES & IDS
     border-radius: 100%;
     transition: ease-in;
     transition-duration: .3s;
+}
+
+.principal {
+    background: rgba(0, 0, 0, 0.75);
 }
