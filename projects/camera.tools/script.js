@@ -5,7 +5,7 @@ function fun2() {
     menu.addEventListener('change', () => {
         if (menu.checked == true) {
             document.getElementById("demo1").innerHTML = "OFF";
-            document.getElementById("principal").style.background = "none";
+            document.getElementById("principal").style.background = "rgba(86, 86, 86, 0)";
             document.getElementById("p-menu").style.color = "#530056";
             document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
         } else {
