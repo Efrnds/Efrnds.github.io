@@ -269,3 +269,24 @@ Classes & ID's
 
 
 
+#server{
+    display: grid;
+    color: #fff;
+    place-self: center;
+    text-align: center;
+}
+#server p, #server a {
+    font-size: 24pt;
+    text-decoration: none;
+}
+
+#server a{ 
+    color: #ff00ff;
+    font-size: 30pt;
+    transition: ease;
+    transition-duration: .3s;
+}
+
+#server a:hover {
+    color: white;
+}
