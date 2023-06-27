@@ -23,7 +23,7 @@ UTILITÁRIOS
 */
 
 body {
-    transition: ease .3s;
+    transition: ease .1s;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
