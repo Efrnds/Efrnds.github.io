@@ -23,7 +23,7 @@ UTILITÁRIOS
 */
 
 body {
-    transition: background .1s;
+    transition: ease .3s;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
@@ -206,4 +206,9 @@ CLASSES & IDS
 .demo1, .demo2{
     transition: ease;
     transition-duration: .2s;
+}
+
+#btn-1, #btn-2, #btn-3, #btn-4, #btn-5{
+    transition: ease;
+    transition-duration: 1s;
 }
