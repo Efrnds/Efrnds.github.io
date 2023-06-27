@@ -19,13 +19,15 @@ function fun2() {
         if (menu.checked == true) {
             document.getElementById("demo1").innerHTML = "OFF";
             document.getElementById("principal").style.background = "rgba(86, 86, 86, 0)";
-            document.getElementById("p-menu").style.color = "#530056";
+            document.getElementById("pe").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+            document.getElementById("cabeca").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
             document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
         } else {
-            document.getElementById("principal").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
-            document.getElementById("p-menu").style.color = "#fff";
-            document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
             document.getElementById("demo1").innerHTML = "ON";
+            document.getElementById("principal").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+            document.getElementById("pe").style.backgroundColor = "rgba(0, 0, 0, 0)";
+            document.getElementById("cabeca").style.backgroundColor = "rgba(0, 0, 0, 0)";
+            document.getElementById("p-menu").style.fontFamily = "IBMPlexMono-Bold";
         }
     });
 
