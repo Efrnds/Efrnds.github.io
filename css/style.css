@@ -3,10 +3,11 @@ Utilitários
 */
 
 :root {
-    --azul-escuro: #0E0C1B;
-    --azul-borda: #1D1839;
+    --fundo: #FFFFFF;
+    --borda: #000000;
     --cor-link: #ffbb00;
-    --cor-texto: #fff;
+    --cor-texto: #000000;
+    --botao: #aaa;
 }
 
 @font-face {
@@ -28,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: var(--azul-escuro);
+    background-color: var(--fundo);
     scroll-behavior: smooth;
     position: relative;
     height: fit-content;
@@ -45,19 +46,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 main::before {
     content: "";
     width: 90%;
     height: 4px;
-    background-color: var(--azul-borda);
+    background-color: var(--borda);
     border-radius: 4px;
     display: block;
     margin: 0px auto;
 }
 
 footer{
-    color:  white;
+    color:  var(--cor-texto);
     text-align: center;
 }
 
@@ -65,7 +72,7 @@ footer::before {
     content: "";
     width: 90%;
     height: 4px;
-    background-color: var(--azul-borda);
+    background-color: var(--borda);
     border-radius: 4px;
     display: block;
     margin: 20px auto;
@@ -76,8 +83,8 @@ Classes & ID's
 */
 
 .botao-nav {
-    background-color: #E5E5E5;
-    color: #323232;
+    background: #B0B0B0;
+    color: var(--cor-texto);
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 1em;
@@ -86,17 +93,17 @@ Classes & ID's
 }
 
 .botao-nav:hover {
-    color: #000000;
-    background-color: #aaaaaa;
+    color: var(--fundo);
+    background-color: #333333;
 }
 
 .card {
     display: grid;
     backdrop-filter: blur(12px) saturate(150%);
     -webkit-backdrop-filter: blur(12px) saturate(150%);
-    background-color: rgba(17, 25, 40, 0.4);
+    background-color: #8686863b;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid var(--borda);
     justify-items: center;
     width: 30rem;
     height: fit-content;
@@ -112,7 +119,7 @@ Classes & ID's
 .imgcard {
     padding: 1rem;
     border-radius:7rem;
-    border: #aaaaaa6c 1px solid;
+    border: #0000006c 1px solid;
 }
 
 .card span a img{
@@ -137,11 +144,11 @@ Classes & ID's
 .contato {
     display: grid;
     place-items: center;
-    color: #E5E5E5;
+    color: var(--cor-texto);
 }
 
 .contato a {
-    color: #ffbb00;
+    color: var(--cor-link);
     text-decoration: none;
     transition: ease-in;
     transition-duration: .2s;
@@ -155,12 +162,12 @@ Classes & ID's
 }
 
 .proj {
-    border: var(--azul-borda) 4px solid;
+    border: var(--borda) 4px solid;
     border-radius: 1em;
     width: 256px;
     height: 256px;
     display: grid;
-    margin: auto;
+    margin: 5vh 0vw;
     place-self: center;
     place-content: center;
     padding: 20px;
@@ -173,7 +180,7 @@ Classes & ID's
 }
 
 .proj:hover {
-    border: #180875 4px solid;
+    border: #9b9b9b 4px solid;
 }
 
 .proj:hover .image {
@@ -196,7 +203,7 @@ Classes & ID's
 
 .middle a {
     text-decoration: none;
-    background-color: #ffbb00;
+    background-color: var(--cor-link);
     color: #5f4601;
     padding: 0px 10px;
     border-radius: 15px;
@@ -257,7 +264,7 @@ Classes & ID's
 */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e6e6e6cb;
+    background-color: var(--botao);
     border-radius: 5rem;
 }
 
@@ -267,26 +274,3 @@ Classes & ID's
     height: .4rem;
 }
 
-
-
-#server{
-    display: grid;
-    color: #fff;
-    place-self: center;
-    text-align: center;
-}
-#server p, #server a {
-    font-size: 24pt;
-    text-decoration: none;
-}
-
-#server a{ 
-    color: #ff00ff;
-    font-size: 30pt;
-    transition: ease;
-    transition-duration: .3s;
-}
-
-#server a:hover {
-    color: white;
-}
