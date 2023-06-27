@@ -26,12 +26,12 @@ body {
     transition: ease;
     transition-duration: .3s;
     background-repeat: no-repeat;
-    background-size: cover;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     font-family: IBMPlexMono-Regular;
     height: fit-content;
+    background-size: cover;
 }
 
 p,
