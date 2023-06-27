@@ -96,5 +96,7 @@ function fun2() {
 function load() {
     document.getElementById("demo1").innerHTML = "ON";
     document.getElementById("demo2").innerHTML = "OFF";
+    document.getElementById("pe").style.backgroundColor = "rgba(0, 0, 0, 0)";
+    document.getElementById("cabeca").style.backgroundColor = "rgba(0, 0, 0, 0)";
 };
 
