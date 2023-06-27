@@ -6,17 +6,10 @@ var control = [
     'img/Control/5.png',
     'img/Control/6.png',
     'img/Control/7.png',
-    'img/Control/19.png',
-    'img/Control/20.png',
-    'img/Control/21.png',
-    'img/Control/22.png',
-    'img/Control/23.png',
-    'img/Control/24.png',
-    'img/Control/25.png',
-    'img/Control/26.png',
-    'img/Control/27.png',
-    'img/Control/28.png',
-    'img/Control/40.png'];
+    'img/Control/8.png',
+    'img/Control/9.png',
+    'img/Control/10.png'
+];
 
 function fun2() {
     let menu = document.getElementById("onoff1");
