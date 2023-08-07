@@ -1,12 +1,6 @@
-body {
-    display: grid;
-    font-family: sans-serif;
-    background: #a7a7a7;
-}
-
-p {
-    text-align: center;
-}
+/*
+Utilitários
+*/
 
 :root {
     --fundo: #FFFFFF;
@@ -18,33 +12,45 @@ p {
 
 @font-face {
     font-family: Dongle-Regular;
-    src: url("/fonts/Dongle-Regular.ttf");
+    src: url(../fonts/Dongle-Regular.ttf);
 }
 
 @font-face {
     font-family: Dongle-Bold;
-    src: url("/fonts/Dongle-Bold.ttf");
+    src: url(../fonts/Dongle-Bold.ttf);
 }
 
+/*
+Css's
+*/
 
 
-body
-{
+body {
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: var(--azul-escuro);
+    background-color: var(--fundo);
     scroll-behavior: smooth;
     position: relative;
     height: fit-content;
 }
+
 p, a {
     font-family: Dongle-Regular, sans-serif;
     font-size: 18pt;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Dongle-Bold, sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
 main {
-    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 main::before {
@@ -57,45 +63,30 @@ main::before {
     margin: 0px auto;
 }
 
-.header {
-    background: var(--azul-escuro);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
+footer{
+    color:  var(--cor-texto);
+    text-align: center;
 }
 
-.menu a {
-    color: wheat;
-}
-
-.menu {
-    display: flex;
-}
-
-.a-menu:hover {
-    background: #969696;
-    color: #272727;
-    transition: ease-in;
-    transition-duration: 0.1s;
-}
-
-.menu li {
-    margin-left: 10px;
-}
-
-.menu li a {
+footer::before {
+    content: "";
+    width: 90%;
+    height: 4px;
+    background-color: var(--borda);
+    border-radius: 4px;
     display: block;
-    padding: 10px;
-    background: rgba(87, 87, 87, 0.11);
+    margin: 20px auto;
 }
+
+/*
+Classes & ID's
+*/
 
 .botao-nav {
-    background-color: #E5E5E5;
-    color: #323232;
+    background: #B0B0B0;
+    color: var(--cor-texto);
     text-decoration: none;
-    padding: .5rem .8rem;
+    padding: 5px 10px;
     border-radius: 1em;
     transition: ease-in-out;
     transition-duration: .2s;
@@ -106,13 +97,43 @@ main::before {
     background-color: #333333;
 }
 
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.animate__animated.animate__fadeInRightBig {
+    --animate-duration: 1.5s;
+  }
+
+
+@media (max-width: 428px) {
+    .navbar{
+        display: flex;
+        gap: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .navbar a{
+        gap: 0px;
+        margin: 0px;
+        width: 5rem;
+        font-size: 14pt;
+    }    
+}
+
 
 /* 
     SCROLLBAR
 */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e6e6e6cb;
+    background-color: var(--botao);
     border-radius: 5rem;
 }
 
@@ -121,6 +142,4 @@ main::before {
     width: .4rem;
     height: .4rem;
 }
-
-
 
