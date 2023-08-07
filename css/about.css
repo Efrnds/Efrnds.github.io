@@ -9,10 +9,11 @@ p {
 }
 
 :root {
-    --azul-escuro: #0E0C1B;
-    --azul-borda: #1D1839;
+    --fundo: #FFFFFF;
+    --borda: #000000;
     --cor-link: #ffbb00;
-    --cor-texto: #fff;
+    --cor-texto: #000000;
+    --botao: #aaa;
 }
 
 @font-face {
@@ -49,12 +50,13 @@ main {
 main::before {
     content: "";
     width: 90%;
-    height: .3rem;
-    background-color: var(--azul-borda);
-    border-radius: .3rem;
+    height: 4px;
+    background-color: var(--borda);
+    border-radius: 4px;
     display: block;
     margin: 0px auto;
 }
+
 .header {
     background: var(--azul-escuro);
     display: flex;
@@ -100,8 +102,8 @@ main::before {
 }
 
 .botao-nav:hover {
-    color: #000000;
-    background-color: #aaaaaa;
+    color: var(--fundo);
+    background-color: #333333;
 }
 
 
