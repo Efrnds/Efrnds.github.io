@@ -46,13 +46,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 main::before {
     content: "";
     width: 90%;
@@ -60,7 +53,7 @@ main::before {
     background-color: var(--borda);
     border-radius: 4px;
     display: block;
-    margin: 0px auto;
+    margin: 0px auto 3% auto;
 }
 
 footer{
@@ -97,14 +90,76 @@ Classes & ID's
     background-color: #333333;
 }
 
-.container {
+.card {
+    display: grid;
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    background-color: #8686863b;
+    border-radius: 12px;
+    border: 1px solid var(--borda);
+    justify-items: center;
+    width: 30rem;
+    height: fit-content;
+    padding: 2.5rem;
+}
+
+.card img {
+    width: 10rem;
+    height: auto;
+    border-radius: 5rem;    
+}
+
+.imgcard {
+    padding: 1rem;
+    border-radius:7rem;
+    border: #0000006c 1px solid;
+}
+
+.card span a img{
+    width: 3rem;
+    transition: ease .3s;
+}
+.card span a img:hover{
+    opacity: .5;
+}
+
+.contato {
     display: grid;
     place-items: center;
+    color: var(--cor-texto);
+}
+
+.contato a {
+    color: var(--cor-link);
+    text-decoration: none;
+    transition: ease-in;
+    transition-duration: .2s;
+}
+
+.contato a:hover {
+    color: #ffea2d;
 }
 
 .animate__animated.animate__fadeInRightBig {
     --animate-duration: 1.5s;
   }
+
+
+@media (max-width: 1000px) {    
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        width: 20rem;
+    }
+}
 
 
 @media (max-width: 428px) {

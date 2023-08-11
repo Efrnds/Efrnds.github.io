@@ -47,10 +47,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: space-evenly;
+}
+
+main p,h2{
+    margin: 0 15%;
+    text-align: justify;
+    text-justify: inter-word;
+    color: var(--cor-texto);
 }
 
 main::before {
@@ -60,7 +65,7 @@ main::before {
     background-color: var(--borda);
     border-radius: 4px;
     display: block;
-    margin: 0px auto;
+    margin: 0px auto 3% auto;
 }
 
 footer{
@@ -159,6 +164,13 @@ Classes & ID's
 }
 .nav {
     position: relative;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .proj {
