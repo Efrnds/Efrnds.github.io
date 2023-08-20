@@ -103,10 +103,10 @@ Classes & ID's
     padding: 2.5rem;
 }
 
-.card img {
+.imgcard img {
     width: 10rem;
     height: auto;
-    border-radius: 5rem;    
+    border-radius: 100rem;
 }
 
 .imgcard {
